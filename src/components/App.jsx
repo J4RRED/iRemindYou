@@ -54,7 +54,7 @@ class App extends Component {
       <div className='App'>
         <section className='top-page'>
           <div
-            className='roller center-div center-all'
+            className='roller center-div center-all div-box'
             >
             <Roll top cascade>
               <a href='bottom-page'>
@@ -95,7 +95,7 @@ class App extends Component {
         { this.renderReminders() }
         {/* clear all button */}
         <div
-          className='btn btn-danger clear-button'
+          className='btn btn-danger clear-button center-clear-btn'
           onClick={() => this.props.clearReminders()}
           >
             Clear Reminders
@@ -113,5 +113,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, { addReminder, deleteReminder, clearReminders })(App);
-
-// all you need is a constant, action w action creator and a reducer; all to store one big state object
