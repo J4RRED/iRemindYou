@@ -93,9 +93,8 @@ input {
 .center-clear-btn {
   padding: 10px;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  left: 0%;
   transform: translate(-50%, 50%);
 }
 
@@ -126,10 +125,6 @@ a:active {
 
 /* if needed to get another page/back to top */
 .top-page {
-  height: 0px;
-  font-variant: small-caps;
-  font-size: x-small;
-  font-family: helvetica, sans-serif;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -137,4 +132,14 @@ a:active {
 .bottom-page {
   letter-spacing: 2px;
   text-align: center;
+  margin: 100% 0% 25% 0%;
+}
+
+.div-box {
+  width: 300px;
+  height: 75px;
+  border: 5px solid white;
+  margin: 100% 100% 500% 50%;
+  position: sticky;
+  box-shadow: 50px 25px white;
 }
