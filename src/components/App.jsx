@@ -52,10 +52,11 @@ class App extends Component {
     return (
       /* jsx for title page only */
       <div className='App'>
-        <section className='top-page'>
+        <section id='top-page-layout'>
           <div
             className='roller center-div center-all div-box'
             >
+              {/*}<div className="opacity">Welcome to...</div>*/}
             <Roll top cascade>
               <a href='bottom-page'>
                 iRemindYou
@@ -65,7 +66,7 @@ class App extends Component {
         </section>
 
         {/* Actual jsx for reminder app */}
-        <section className='bottom-page'>
+        <section id='bottom-page-layout'>
         <div
           className='title'>
           iRemindYou
