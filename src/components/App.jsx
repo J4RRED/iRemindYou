@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { addReminder, deleteReminder, clearReminders } from '../actions';
 import moment from 'moment';
 import Roll from 'react-reveal/Roll';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 class App extends Component {
   constructor(props) {
@@ -53,12 +52,12 @@ class App extends Component {
       /* jsx for title page only */
       <div className='App'>
         <section id='top-page-layout'>
+          <div className='opacity'>Welcome to...</div>
           <div
-            className='roller center-div center-all div-box'
+            className='roller center-div center-all blurred-box'
             >
-              {/*}<div className="opacity">Welcome to...</div>*/}
             <Roll top cascade>
-              <a href='bottom-page'>
+              <a href='#iRemindYouApp'>
                 iRemindYou
               </a>
             </Roll>
@@ -66,7 +65,7 @@ class App extends Component {
         </section>
 
         {/* Actual jsx for reminder app */}
-        <section id='bottom-page-layout'>
+        <section id='iRemindYouApp'>
         <div
           className='title'>
           iRemindYou
