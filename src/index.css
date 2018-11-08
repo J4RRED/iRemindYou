@@ -13,6 +13,26 @@ body {
   align-items: center;
 }
 
+.opacity {
+  animation:opac 2.0s;
+  color: white;
+  animation-duration: 3s;
+}
+
+@keyframes opac {
+  from{opacity:0}
+  to{opacity:1}
+}
+
+/*.fading {
+  animation:fading 5s infinite;
+}
+
+@keyframes fading {
+  0%{opacity:0}
+  50%{opacity:1}
+  100%{opacity:0}}*/
+
 .title {
   text-align: center;
   font-size: 26px;
@@ -75,6 +95,7 @@ input {
 
 .roller {
   font-size: 35px;
+  position: fixed;
 }
 
 .center-div {
@@ -129,10 +150,19 @@ a:active {
   text-align: center;
 }
 
-.bottom-page {
+#top-page-layout {
+  height: 250vh;
+  letter-spacing: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#bottom-page-layout {
+  height: 100vh;
   letter-spacing: 2px;
   text-align: center;
-  margin: 100% 0% 25% 0%;
+  box-sizing: border-box;
 }
 
 .div-box {
@@ -141,5 +171,6 @@ a:active {
   border: 5px solid white;
   margin: 100% 100% 500% 50%;
   position: sticky;
-  box-shadow: 50px 25px white;
+  box-shadow: 5px -5px 5px 0px #b3b3b3;
+  background-color: #000019;
 }
